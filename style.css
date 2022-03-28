@@ -43,14 +43,14 @@ html {
 }
 .main-dashboard {
     background-color: #D97706;
+    display: flex;
+    padding: 10px;
 }
 .searchbar {
-    border: 5px solid green;
     display: flex;
 }
 .panel-left {
     width: 60%;
-    border: 5px solid green;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -59,15 +59,115 @@ html {
 }
 .panel-right {
     flex: 1;
-    border: 5px solid green;
     display: flex;
     gap: 15px;
     justify-content: end;
     align-items: center;
     margin-right: 10px;
     font-size: 2rem;
+    cursor: pointer;
 }
 #search {
     width: 100%;
+    border-radius: 10px;
+    background-color: gray;
+    border: 1px solid #D97706;
+    height: 1.4rem;
 }
+.profile-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+.handler {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.buttons > button {
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #FEF3C7;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+#newbtn:hover, #newupload:hover,#sharebtn:hover {
+    background-color: #F59E0B;
+}
+.projects {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.projects > h2 {
+    height: 40px;
+}
+.cards-container {
+    font-size: 2.4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;
+}
+.card {
+    gap: 4px;
+    background-color: #FEF3C7;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+.main-sidebar {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
 
+}
+.card > div > svg{
+    cursor: pointer;
+}
+.announcement-card {
+    background-color: #FEF3C7;
+    font-size: 1rem;
+    height:fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    
+
+}
+.trending-card {
+    background-color: #FEF3C7;
+    height:fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    font-size: 1.5rem;
+
+}
+.announcements,.trending {
+    flex: 1;
+    height:auto;
+}
+.flex-cards {
+    display: flex;
+    gap: 10px;
+}
+.dashboard-items:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
